@@ -44,19 +44,9 @@
 					<form:input id="unitsInStock" path="unitsInStock" type="text" class="form:input-large"/>
 				</div>
 				<div class="form-group">
-					<label class="control-label col-lg-2 col-lg-2" for="unitsInOrder">Units in order</label>
-					<form:input id="unitsInOrder" path="unitsInOrder" type="text" class="form:input-large"/>
-				</div>
-				<div class="form-group">
 					<label class="control-label col-lg-2" for="description">Description</label>
 					<div class="col-lg-10">
 						<form:textarea id="description" path="description" rows="2"/>
-					</div>
-				</div>
-				<div class="form-group">
-					<label class="control-label col-lg-2" for="discontinued">Discontinued</label>
-					<div class="col-lg-10">
-						<form:checkbox id="discontinued" path="discontinued" />
 					</div>
 				</div>
 				<div class="form-group">
