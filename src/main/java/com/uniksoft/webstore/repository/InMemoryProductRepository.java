@@ -93,4 +93,9 @@ public class InMemoryProductRepository implements ProductRepository {
 		return productsByBrand;
 	}
 
+	@Override
+	public void addProduct(Product product) {
+		products.add(product);
+	}
+
 }
