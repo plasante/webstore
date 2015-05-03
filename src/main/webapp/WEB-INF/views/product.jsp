@@ -1,4 +1,5 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://www.springframework.org/tags" prefix="spring" %>
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
@@ -24,7 +25,10 @@
 				<p><strong>category</strong> : ${product.category}</p>
 				<p><strong>Available units in stock </strong>${product.unitsInStock}</p>
 				<h4>${product.unitPrice}</h4>
-				<p><a href="#" class="btn btn-warning btn-large">
+				<p><a href="<spring:url value="/products" />" class="btn btn-default">
+						<span class="glyphicon-hand-left glyphicon"></span>back
+				   </a>
+					<a href="#" class="btn btn-warning btn-large">
 						<span class="glyphicon-shopping-cart glyphicon">Order Now</span>
 					</a></p>
 			</div>
