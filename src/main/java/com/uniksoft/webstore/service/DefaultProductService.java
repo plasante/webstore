@@ -31,6 +31,11 @@ public class DefaultProductService implements ProductService {
 	public Set<Product> getProductsByFilter(Map<String, List<String>> filterParams) {
 		return productRepository.getProductsByFilter(filterParams);
 	}
+
+	@Override
+	public Product getProductById(String productId) {
+		return productRepository.getProductById(productId);
+	}
 	
 	
 }
